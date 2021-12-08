@@ -1,0 +1,16 @@
+1.- Crear un documento HTML y vincular una hoja de estilos CSS
+2.- Crear una estructura HTML que contenga lo siguiente:
+    -Contenedor general
+    -Cabecera
+    -Menu
+    -Barra lateral
+    -Seccion de contenido principal
+    -Elementos dentor del contenedor principal
+    -Footer
+3.- Todo el contenido debe estar dentro del contenedor general y centrado. Su ancho sera de 1200px.
+4.- El header debe abarcar el 100% del ancho y tener un texto grande centrado.
+5.- El menu debe tener los elemento uno a lado de otro y aplicar estilos.
+6.- El contenido principal debe tener un ancho del 70%
+7.- El contenido principal sera una cuadricula de tarjetas de 4 lineas con 2 tarjetas x linea.
+8.- La barra lateral debera tener un ancho del 30%
+9.- El footer debe ocupar el 100% del ancho de la pantalla y estar pegado al bottom(abajo) de la pagina.
