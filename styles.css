@@ -21,14 +21,15 @@ img {
     border: solid 3px #ccc;
     margin: 0px auto;  /*---centra el contenido en la pantalla*/
     margin-top: 20px;
+    background: #3AA0AA;
 }
 
 /* El header debe abarcar el 100% del ancho y tener un texto grande centrado */
 #header {
     min-width: 100%;
     height: 100px;
-    background: hsl(250,107%,74%);
-    color: whitesmoke;
+    background: #23383B;
+    color: #E29000;
     text-align: center;
     line-height: 90px;
     letter-spacing: 2px;
@@ -36,27 +37,27 @@ img {
 
 /* El menu debe tener los elemento uno a lado de otro y aplicar estilos. */
 #menu {
-    background-color: hsl(240,115%,89%);
+    background-color: #246068;
 }
 #menu ul li {
     display: inline-block;
-    border-right: solid 1px Gainsboro;
+    border-right: solid 1px #F9DA66;
     
 }
 
 #menu ul li a {
     display: block;
-    color: #444;
+    color: #E29000;
     padding: 8px;
 }
 
 #menu ul li:hover {
-    background: hsl(250,107%,74%);
+    background: #23383B;
     cursor: pointer;
 }
 
 #menu ul li:hover a {
-    color: whitesmoke;
+    color: #F9DA66;
 }
 
 /* El contenido principal debe tener un ancho del 70% */
@@ -70,24 +71,34 @@ img {
 #content .box {
     width: 35%;
     height: 400px;
-    background: PaleGreen;
-    border: solid 1px purple;
-    color: whitesmoke;
+    background: #E29000;
+    border: solid 1px #F9DA66;
+    color: #23383B;
     float: left;
     margin: 20px 40px 20px 40px;
+    box-shadow: -20px 12px 6px #23383b;
+    border-radius: 30px;
+    padding: 20px;
 }
 
 #content > h2 {
     text-align: center;
-    border-bottom: solid 1px #ccc;
+    border-bottom: solid 1px #F9DA66;
     padding: 5px;
+    color: #23383B;
+    text-shadow: -2px 2px 6px black;
 }
 
 /* La barra lateral debera tener un ancho del 30% */
  #sidebar {
     width: 29%;
-    border: solid 1px MediumPurple;
+    border: solid 1px #E29000;
     float: left;
+    background: #F9DA66;
+    box-shadow: 1px 6px 21px #246068;
+}
+#sidebar .box {
+    color: #23383B;
 } 
 
 /* El footer debe ocupar el 100% del ancho de la pantalla y estar pegado al bottom(abajo) de la pagina */
