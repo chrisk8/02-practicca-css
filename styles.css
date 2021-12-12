@@ -92,10 +92,13 @@ img {
 /* La barra lateral debera tener un ancho del 30% */
  #sidebar {
     width: 29%;
+    max-height: 467px;
     border: solid 1px #E29000;
     float: left;
     background: #F9DA66;
     box-shadow: 1px 6px 21px #246068;
+    /* overflow en y para agregar scroll al sidebar y ocultar contenido sobrante */
+    overflow-y: scroll;
 }
 #sidebar .box {
     color: #23383B;
@@ -109,4 +112,42 @@ img {
     line-height: 43px;
     text-align: center;
 
+}
+
+.boxfloat {
+    position: absolute;
+    top: 556px;
+    left: 325px;
+    width: 90px;
+    height: 100px;
+    background: #23383B;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 6px 21px #246068;
+    z-index: 1;    
+}
+
+.capa1 {
+    top: 550px;
+    left: 340px;
+    background: #E29000;
+    z-index: 2;
+}
+
+#social {
+    position: fixed;
+    top: 30%;
+    left: 0px;
+    min-width: 85px;
+    min-height: 250px;
+    border: 1px solid #F9DA66;
+    padding: 10px;
+    background: #23383b;
+}
+
+.boxIcon {
+    border: 1px solid #E29000;
+    min-width: 70px;
+    min-height: 70px;
+    margin: 5px;    
 }
