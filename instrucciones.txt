@@ -14,3 +14,6 @@
 7.- El contenido principal sera una cuadricula de tarjetas de 4 lineas con 2 tarjetas x linea.
 8.- La barra lateral debera tener un ancho del 30%
 9.- El footer debe ocupar el 100% del ancho de la pantalla y estar pegado al bottom(abajo) de la pagina.
+
+Despues, agbregar un archivo HTML con su respectivo archivo css en donde se demuestre el uso de
+pseudoclases y animaciones con css.

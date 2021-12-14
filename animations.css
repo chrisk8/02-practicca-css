@@ -1,0 +1,152 @@
+@font-face {
+    font-family: CarterCustom;
+    src: url(./fonts/CarterOne/CarterOne-Regular.ttf);
+
+    font-family: CutiveMonoCustom;
+    src: url(./fonts/CutiveMono/CutiveMono-Regular.ttf);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+
+label {
+    font-family: CutiveMonoCustom;
+    font-size: 25px;
+    color: #F9F6D8;
+    font-weight: bold;
+}
+
+#mainbox {
+    margin: 0px auto;  /*---centra el contenido en la pantalla*/
+    width: 1200px;
+    min-height: 611px;
+    border: solid 3px #ccc;    
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+
+    /* background: #3AA0AA; */
+}
+
+#header {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: CarterCustom;
+    font-size: 30px;
+    color: #F9F6D8;
+    margin: 0px;
+}
+
+.containerLogin {
+    width: 600px;
+    height: 480px;
+    margin: 0% auto;
+    border: solid 1px #2E89BA;
+    border-radius: 15px;
+}
+
+#navbar ul {
+    margin-top: 10px;
+    padding: 5px;
+}
+#navbar ul li{
+    display: inline-block;
+    border-right: solid 1px #F9F6D8;
+    width: 280px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+#navbar ul  li  a {
+    font-family: CutiveMonoCustom;
+    font-size: 25px;
+    text-decoration: none;
+    color: #F9F6D8;
+}
+
+/* Uso de pseudoclases para el navbar del Login. */
+#navbar ul  li:hover:first-child { /* Selecciona el primer li de la lista*/
+    background: #A047A4;
+}
+#navbar ul  li:active:first-child { /* cambia el fondo al hacer click*/
+    background: #7F4AA1;
+}
+#navbar ul  li:hover:last-child {  /* Selecciona el ultimo elemento de la lista*/   
+    background: #7F4AA1;    
+}
+#navbar ul  li:active:last-child {  /*Cambia el fondo al hacer click*/   
+    background: #A047A4;    
+}
+
+/*  Selecciona el elemento de la lista que se especifique
+#navbar ul li:nth-child(4) {
+    ...code here
+}  */
+
+#formGroup {
+    /* border: solid 1px #2E89BA; */
+    padding: 20px 35px 35px 35px;
+    text-align: center;    
+}
+.formItem {
+    display: inline-block;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.formItem input[type="text"],[type="password"]{
+    padding: 15px;
+    width: 80%;
+    border: 1px solid #2E89BA;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    color: #F9F6D8;
+}
+
+
+.formItem input[type="submit"] {
+    color: #F9F6D8;
+    font-size: 22px;
+    background: #F03EAB;
+    font-family: CarterCustom;
+    cursor: pointer;
+    border: 1px solid #F60C86;
+    width: 455px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.formItem input[type="submit"]:active {  /*Se aplican estos estilos al mantener presionado el boton*/
+    background: #2E83C3;
+    font-size: 20px;
+    font-family: CarterCustom;
+    cursor: pointer;
+    border: 1px solid #2E89BA;
+}
+
+input[type="text"]:focus, [type="password"]:focus { /*Se aplican estos estilos al seleccionar una caja de texto*/
+    font-family: CarterCustom;
+    font-size: 15px;
+    color: #F9F6D8;
+    border: 1px solid #F60C86;
+    border-radius: 10px;
+}
+
+#footer {
+    margin: 0px auto;
+    width: 1200px;
+    height: 40px;
+    background: #eee;
+    line-height: 43px;
+    text-align: center;
+}
+
+#footer a:visited {
+    color: red;
+}
