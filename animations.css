@@ -138,6 +138,91 @@ input[type="text"]:focus, [type="password"]:focus { /*Se aplican estos estilos a
     border-radius: 10px;
 }
 
+.foto {
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #F60C86;
+    text-align: center;
+    line-height: 43px;
+    font-size: 22px;
+    font-family: CarterCustom;
+    color: #F9F6D8;
+    background: #FF3CAC;
+/* aplica la transicion a todas la propiedades declaradas en la pseudoclase en 3s     */
+    /* transition: all, 3s; */
+
+/* se especifican las propiedades y el tiempo en que tardara su transicion en aplicarse     */
+    transition: background 1.5s, border-radius 2s;
+}
+
+.foto:hover {
+    background: #7F4AA1;
+    border-radius: 8px;
+}
+
+.rueda {
+    margin-left: 2px;
+    width: 80px;
+    height: 80px;
+    border: 4px solid black;
+    padding: 20px;
+    background: #44c2fd;
+    /* Se aplica animacion */
+    animation-name: desplazaDer;   /*nombre del keyframe*/
+    animation-duration: 10s;       /*duracion de la animacion*/
+    animation-iteration-count: infinite;  /*animacion infinita*/
+    animation-timing-function: linear;  /*tipo de duracion de la animacion*/
+}
+
+.rin{
+    width: 70px;
+    height: 70px;
+    border: 2px solid black;
+    font-size: 10px;
+    color: #2E89BA;
+    line-height: 65px;
+    text-align: center;
+    background: #F9F6D8;
+}
+.rueda:hover, .rin:hover {
+    border-radius: 50%;
+    border: 4px solid gray;
+    font-size: 8px;
+}
+
+/* Para animacion de desplazamiento a un lado */
+@keyframes desplazaDer {
+    /* Desplazamiento en 2 puntos
+    from{
+        margin-left: 0px;
+    }
+    to{
+        margin-left: 1073px;
+    } */
+    0%{
+        margin-left: 0px;
+        border-radius: 50%;
+        border: 4px solid gray;
+        font-size: 8px;
+        transform: rotate(0deg);  /*rotacion 0 grados*/
+    }
+    50%{
+        margin-left: 1073px;
+        transform: rotate(360deg)  /*rotacion 360 grados*/;
+    }
+    100%{
+        margin-left: 0px;
+        border-radius: 50%;
+        border: 4px solid gray;
+        font-size: 8px;
+        transform: rotate(0deg);
+    }
+}
+
 #footer {
     margin: 0px auto;
     width: 1200px;
@@ -150,3 +235,4 @@ input[type="text"]:focus, [type="password"]:focus { /*Se aplican estos estilos a
 #footer a:visited {
     color: red;
 }
+
